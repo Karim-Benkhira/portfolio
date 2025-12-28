@@ -765,6 +765,42 @@ body {
     font-size: 0.85rem;
 }
 
+/* Profile Links in Timeline */
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+    background: var(--secondary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+.profile-link i {
+    font-size: 1.1rem;
+}
+
 /* Certifications Section */
 .certifications {
     padding: 100px 20px;
