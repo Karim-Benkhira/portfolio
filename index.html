@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARIM BENKHIRA - Penetration Tester & Red Teamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Matrix Background Effect -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="glitch-text" data-text="KB">KB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="hero-title glitch" data-text="KARIM BENKHIRA">KARIM BENKHIRA</h1>
+            </div>
+            <div class="typing-container">
+                <h2 class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+            </div>
+            <p class="hero-description">
+                Elite Penetration Tester | Red Team Operator | WhatsApp Security Researcher
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="#experience" class="btn btn-secondary">
+                    <i class="fas fa-briefcase"></i> View Experience
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/karim-benkhira/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:karim-benkhira.contacte@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+212714450729" class="social-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="terminal-prompt">root@portfolio:~$</span> whoami
+            </h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">about.sh</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line"><span class="prompt">$</span> cat profile.txt</p>
+                            <p class="summary-text">
+                                <strong>Penetration Tester</strong> and <strong>Red Team</strong> Operator specializing
+                                in web application security,
+                                and cloud security across <span class="highlight">AWS</span>, <span
+                                    class="highlight">Azure</span>, and <span class="highlight">GCP</span>.
+                                Proven track record with multiple valid vulnerability reports submitted through <span
+                                    class="highlight">bug bounty programs</span>
+                                and 16+ advanced certifications completed (ACRTP, MCRTP, HTB Pro Labs).
+                            </p>
+                            <p class="terminal-line"><span class="prompt">$</span> grep -i "special" achievements.log
+                            </p>
+                            <p class="summary-text">
+                                Currently selected as one of a limited number of researchers worldwide for <span
+                                    class="highlight">Meta's WhatsApp
+                                    Private Processing Security Research program</span>. Experienced in identifying
+                                critical vulnerabilities,
+                                misconfigurations, and privilege escalation paths while delivering actionable
+                                remediation strategies to strengthen
+                                security postures.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="stat-number" data-target="16">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-icon"><i class="fas fa-bug"></i></div>
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Valid Reports</div>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-icon"><i class="fas fa-code"></i></div>
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">CTF Challenges</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="terminal-prompt">root@portfolio:~$</span> ls -la /experience
+            </h2>
+            <div class="timeline">
+                <!-- WhatsApp Security Researcher -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>WhatsApp Security Researcher</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> Jun 2025 - Present
+                            </span>
+                        </div>
+                        <p class="company">Meta · Freelance</p>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Selected as one of a limited number of security researchers worldwide to participate in
+                                Meta's
+                                WhatsApp Private Processing Security Research program.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Collaborate directly with Meta's security team via Slack to validate security
+                                architecture
+                                and identify potential vulnerabilities in system integrity.
+                            </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">WhatsApp Security</span>
+                            <span class="tag">Privacy Research</span>
+                            <span class="tag">Meta Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern Penetration Tester -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern Penetration Tester</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> May 2025 - July 2025
+                            </span>
+                        </div>
+                        <p class="company">FasGo - Tangier, Morocco</p>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Conducted comprehensive manual penetration testing on web applications using Burp Suite
+                                to identify
+                                vulnerabilities including XSS, SQL injection, and authentication bypass issues.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Performed detailed source code reviews of PHP and Laravel applications to uncover logic
+                                flaws,
+                                insecure data handling, and potential privilege escalation vulnerabilities.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Collaborated with development teams to provide actionable remediation recommendations,
+                                resulting
+                                in the secure patching of identified security issues before production deployment.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Documented findings in detailed security assessment reports, including risk ratings,
+                                proof-of-concept
+                                exploits, and step-by-step remediation guidance.
+                            </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Burp Suite</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">XSS</span>
+                            <span class="tag">SQL Injection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bug Bounty Hunter -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bug Bounty Hunter</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> January 2022 - Present
+                            </span>
+                        </div>
+                        <p class="company">Bugcrowd - Remote</p>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Identify and report web application vulnerabilities across multiple bug bounty programs,
+                                focusing on
+                                critical issues such as XSS, IDOR, SSRF, SQLI, and authentication flaws.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Leverage automated reconnaissance tools alongside manual testing methodologies to
+                                discover hidden endpoints,
+                                misconfigurations, and logic vulnerabilities in target applications.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Develop custom proof-of-concept exploits to demonstrate the real-world impact of
+                                discovered vulnerabilities,
+                                helping organizations understand security risks.
+                            </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Bug Bounty</span>
+                            <span class="tag">XSS</span>
+                            <span class="tag">IDOR</span>
+                            <span class="tag">SSRF</span>
+                            <span class="tag">SQLI</span>
+                            <span class="tag">Authentication Bypass</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Mentor -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Student Mentor</h3>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> April 2025 - Present
+                            </span>
+                        </div>
+                        <p class="company">Pwned Labs - Remote</p>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Mentor students via Discord and other platforms on red/blue teaming labs, including AWS,
+                                Azure, and GCP.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Beta test upcoming labs and provide feedback to enhance lab quality and user experience.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Granted full access to advanced and business-level labs as part of mentor
+                                responsibilities.
+                            </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Mentorship</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Red/Blue Teaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="terminal-prompt">root@portfolio:~$</span> cat /credentials
+            </h2>
+            <div class="cert-grid">
+                <!-- ACRTP -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ACRTP</h3>
+                    <p class="cert-org">Pwned Labs - AWS Certified Red Team Professional</p>
+                    <p class="cert-year">2025</p>
+                    <a href="https://www.credly.com" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Credential
+                    </a>
+                </div>
+
+                <!-- MCRTP -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-badge">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>MCRTP</h3>
+                    <p class="cert-org">Pwned Labs - Azure Certified Red Team Professional</p>
+                    <p class="cert-year">2024</p>
+                    <a href="https://www.credly.com" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Credential
+                    </a>
+                </div>
+
+                <!-- ThunderDome -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-badge">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>ThunderDome</h3>
+                    <p class="cert-org">Pwned Labs - Red Team Multi-cloud</p>
+                    <p class="cert-year">2025</p>
+                    <a href="https://www.credly.com" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Credential
+                    </a>
+                </div>
+
+                <!-- Electra -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="cert-badge">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>Electra</h3>
+                    <p class="cert-org">Pwned Labs - Red Team Amazon Cloud</p>
+                    <p class="cert-year">2025</p>
+                    <a href="https://www.credly.com" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Credential
+                    </a>
+                </div>
+
+                <!-- HTB Pro Labs -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-badge">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>HTB Pro Labs</h3>
+                    <p class="cert-org">Hack The Box - Multiple Certifications</p>
+                    <p class="cert-year">2024</p>
+                    <div class="cert-list">
+                        <span>DANTE</span>
+                        <span>OFFSHORE</span>
+                        <span>CYBERNETICS</span>
+                        <span>APTLABS</span>
+                        <span>ZEPHYR</span>
+                        <span>RASTALABS</span>
+                        <span>HADES</span>
+                        <span>RPG</span>
+                        <span>XEN</span>
+                        <span>FULLHOUSE</span>
+                        <span>P.O.O.</span>
+                        <span>SOLAR</span>
+                    </div>
+                </div>
+
+                <!-- CTF Player -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="cert-badge">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>CTF Player</h3>
+                    <p class="cert-org">Hack The Box</p>
+                    <p class="cert-year">2020 - Present</p>
+                    <p class="cert-description">
+                        Active participant in Capture The Flag (CTF) competitions to sharpen offensive security skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="terminal-prompt">root@portfolio:~$</span> ./skills.sh --list-all
+            </h2>
+            <div class="skills-grid">
+                <!-- Penetration Testing -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Penetration Testing</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Web Application Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>OWASP Top 10</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vulnerability Assessment</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Code Review</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Reverse Engineering</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Privilege Escalation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Exploitation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Security -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Security</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>AWS Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Azure Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>GCP Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Privilege Escalation (Cloud)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming & Scripting -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Scripting</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bash Scripting</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Linux (Kali, Parrot, Ubuntu)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Windows</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft-skills" data-aos="fade-up">
+                <h3 class="subsection-title">Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill">
+                        <i class="fas fa-users"></i>
+                        <span>Teamwork & Collaboration</span>
+                    </div>
+                    <div class="soft-skill">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="soft-skill">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Continuous Learning</span>
+                    </div>
+                    <div class="soft-skill">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="terminal-prompt">root@portfolio:~$</span> ./contact.sh
+            </h2>
+            <div class="contact-content" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:karim-benkhira.contacte@gmail.com">karim-benkhira.contacte@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+212714450729">+212 714 450 729</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/karim-benkhira/"
+                                target="_blank">linkedin.com/in/karim-benkhira</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-link"></i>
+                        <div>
+                            <h4>PentesterLab Profile</h4>
+                            <a href="#" target="_blank">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-box">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        Looking for a penetration tester or red team operator? I'm available for freelance projects,
+                        security assessments, and consulting opportunities.
+                    </p>
+                    <a href="mailto:karim-benkhira.contacte@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Karim Benkhira. All rights reserved.</p>
+                <p class="footer-tagline">
+                    <i class="fas fa-terminal"></i> Security is not a product, but a process.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
