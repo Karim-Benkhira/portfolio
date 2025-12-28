@@ -32,8 +32,21 @@ A modern, interactive portfolio website showcasing cybersecurity expertise, cert
 ## Setup
 
 1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. No build process required - pure HTML/CSS/JS
+2. Add your CV PDF file to the `assets` folder and name it `Karim_Benkhira_CV.pdf`
+3. Open `index.html` in your web browser
+4. No build process required - pure HTML/CSS/JS
+
+## File Structure
+
+```
+portfolio/
+├── index.html          # Main HTML file
+├── styles.css          # Styling and animations
+├── script.js           # Interactive features
+├── assets/             # Assets folder
+│   └── Karim_Benkhira_CV.pdf  # Your CV (add this file)
+└── README.md           # Documentation
+```
 
 ## Customization
 
